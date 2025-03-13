@@ -1,133 +1,67 @@
-/* Portfolio Website CSS - Inspired by [INSPIRATION SOURCE] */
-
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #FDF1DC; /* Beige color from baseball */
+    color: black;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    line-height: 1.6;
-    background-color: #f5f5f5; /* Light background to match inspiration */
-    color: #333;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FE5A1D; /* Giants orange */
+    text-shadow: 3px 3px 0px black;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    background-color: black;
+    padding: 15px 0;
 }
+
 nav a {
-    color: white;
-    margin: 0 15px;
+    color: #FE5A1D;
     text-decoration: none;
-    padding: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
 }
+
 nav a:hover {
-    background-color: #555;
-    border-radius: 5px;
+    color: white;
+    text-shadow: 2px 2px 5px orange;
 }
 
-/* Header/Intro Section */
-h1 {
-    font-size: 2.5rem;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-}
-img {
-    display: block;
-    margin: 10px auto;
-    border-radius: 50%;
-}
-
-/* Section Styles */
+/* Section Styling */
 section {
     padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: white;
+    margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    font-size: 2rem;
-    color: #444;
-    margin-bottom: 10px;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 3px solid #FE5A1D;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-p {
-    font-size: 1rem;
-    color: #555;
+/* Image Styling */
+img {
+    border: 5px solid #FE5A1D;
+    border-radius: 10px;
 }
 
-/* Project Section */
-article {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-article h3 {
-    font-size: 1.5rem;
-    color: #333;
-}
-
-/* Footer Styles */
+/* Footer */
 footer {
-    background-color: #333;
+    background-color: black;
     color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-footer a {
-    color: #ddd;
-    text-decoration: none;
-}
-footer a:hover {
-    color: white;
-}
-
-/* Contact Form */
-#contact {
-    padding: 20px;
-}
-
-input, textarea {
-    width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #555;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    nav a {
-        display: block;
-        margin: 5px 0;
-    }
+    margin-top: 20px;
 }

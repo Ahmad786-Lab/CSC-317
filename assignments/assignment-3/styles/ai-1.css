@@ -1,83 +1,73 @@
-/* Contact Section */
-
-/*
-#contact {
-  padding: 3rem 0;
-  background-color: #f9f9f9;
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-#contact h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+/* Spider-Man Color Theme */
+h1 {
+    color: #e62429; /* Classic Spider-Man Red */
+    text-shadow: 3px 3px 0px black;
 }
 
-#contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+h2 {
+    color: #005a9c; /* Spider-Man Blue */
+    border-bottom: 3px solid red;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+nav a:hover {
+    color: #e62429;
+    text-shadow: 2px 2px 5px black;
 }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-family: inherit;
-  font-size: 1rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
+/* Section Styling */
+section {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.8);
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--primary-color, #0066cc);
-  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+/* Image Styling */
+img {
+    border: 5px solid #e62429;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  transition: background-color 0.3s, transform 0.3s;
+/* Footer Styling */
+footer {
+    background-color: #e62429;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
 }
 
-.btn-primary {
-  background-color: var(--primary-color, #0066cc);
-  color: white;
+/* Web Borders */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/65/Spidey-web.png');
+    opacity: 0.2;
+    z-index: -1;
 }
 
-.btn-primary:hover {
-  background-color: var(--secondary-color, #004499);
-  transform: translateY(-2px);
-}
-
-.error-message {
-  color: #dc3545;
-  font-size: 0.85rem;
-  margin-top: 0.5rem;
-  display: none;
-}
-
-input:invalid:not(:focus):not(:placeholder-shown) + .error-message {
-  display: block;
-}
-*/
