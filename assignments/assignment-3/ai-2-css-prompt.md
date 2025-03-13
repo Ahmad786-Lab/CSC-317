@@ -1,1 +1,1 @@
-
+I’m designing a personal portfolio website and need a theme inspired by giants photo. I want the website to reflect the colors, mood, and style associated with giants photo while keeping it professional and easy to navigate. I’m looking for design inspirations, UI examples, and best practices that align with this theme. The goal is to create a visually cohesive portfolio that embodies the essence of giants photo while remaining functional and engaging.
