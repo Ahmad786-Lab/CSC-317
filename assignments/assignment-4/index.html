@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ahmad_Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css" id="css-theme">
+    <style>
+.theme-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    padding: 14px;
+    z-index: 1000;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+/* Title Styling */
+.theme-switcher h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    text-align: center;
+    color: #0ff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Flexbox for Buttons */
+.theme-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+/* Theme Buttons */
+.theme-button {
+    padding: 10px 18px;
+    background: #222;
+    border: 2px solid rgba(0, 255, 255, 0.6);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0ff;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glowing Hover Effect */
+.theme-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.4) 10%, transparent 60%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s ease-out;
+}
+
+.theme-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.theme-button:hover {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Active Button Styling */
+.theme-button.active {
+    background: #0ff;
+    color: #111;
+    border-color: #0ff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.9);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .theme-switcher {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px;
+    }
+
+    .theme-buttons {
+        flex-direction: column;
+    }
+
+    .theme-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+    </style>
+</head>
+<body>
+<!-- Main heading that have my name -->
+<img src="images/Profile.HEIC" alt="My photo" width="200" height="200" style="display: block; margin: auto; border-radius: 50%; object-fit: cover; border: 10px solid purple;">
+
+
+<h1>Muhammad Ahmad</h1>
+<h4>----------------------------------------</h4>
+<!--  links -->
+<nav>
+    <a href="#bio">About Me</a> |
+    <a href="#education">Education</a> |
+    <a href="#hometown">Hometown</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#experience">Experience</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#contact">Contact</a> |
+</nav>
+
+<!-- My Bio section -->
+<section id="bio">
+    <h2>About Me</h2>
+    <p style="padding-left: 30px;">
+        Hello! I'm Muhammad Ahmad, a Computer Science major at SF State. I enjoy problem solving, playing baseball,
+        and volunteering at non-profits to help youth. I'm passionate about technology and want to make a difference
+        in people's lives.
+    </p>
+    <img src="images/Me.heic" alt="My photo" width="200" height="200"
+         style="display: block; margin: auto; border: 10px solid purple;">
+</section>
+
+<!-- Education section -->
+<section id="education">
+    <h2>Education</h2>
+    <p style="padding-left: 30px;"> Right now i'm studying Computer Science at San Francisco State University and City college. I'm also playing college baseball as a pitcher at CCSF.</p>
+    <img src="images/Sfstate.jpeg" alt="School logo" width="200" height="200" style="display: block; margin: auto; border: 10px solid purple;">
+</section>
+
+
+<!-- Hometown section -->
+<section id="hometown">
+    <h2>Hometown</h2>
+    <p style="padding-left: 30px;">I grew up in the Bayview hunter points neighborhood of San Francisco, which inspired me to work in non-profits and support youth development.</p>
+    <img src="images/BayviewHunterPoint.jpeg" alt="My hometown" width="200" height="200" style="display: block; margin: auto; border: 10px solid purple;">
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li> Teamwork , Communication , Hard work</li>
+        <li> Java , JavaScript , CSS , HTML , C++ </li>
+        </ul>
+
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <ul>
+        <li>Teacher assistant - June 2023 to August 2023</li>
+        <li>Intern at Ymca - Summer 2023</li>
+    </ul>
+</section>
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>
+            <h3>Project Housing</h3>
+            <p>Did this project to solve the dorm system.</p>
+        </li>
+        <li>
+            <h3>Project Calculator</h3>
+            <p>iOS-style calculator built using HTML, CSS, and JavaScript. <a href="calculator.html" target="_blank">Click here to Try</a>.</p>
+            <img src="images/Calculator.png" alt="Calculator preview" width="200" height="200" style="display: block; margin: auto; border: 10px solid purple;">
+        </li>
+    </ul>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p style="padding-left: 30px;" >If you would like to get in touch, please use the contact form below.</p>
+</section>
+
+<footer>
+    <section id="contacts">
+        <h2>Connect with Me</h2>
+        <p style="padding-left: 30px;">
+            Connect with me on LinkedIn:
+            <a href="https://www.linkedin.com/in/muhammad-ahmad-889742292/">Muhammad Ahmad</a>
+        </p>
+    </section>
+</footer>
+
+<!-- Theme Switcher -->
+<div class="theme-switcher">
+    <h3>Theme Switcher</h3>
+    <div class="theme-buttons">
+        <button class="theme-button active" data-theme="styles">Hand-Written</button>
+        <button class="theme-button" data-theme="ai-1">AI 1</button>
+        <button class="theme-button" data-theme="ai-2">AI 2</button>
+        <button class="theme-button" data-theme="hybrid">Hybrid</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all theme buttons
+        const themeButtons = document.querySelectorAll('.theme-button');
+        // Get the stylesheet link element
+        const themeStylesheet = document.getElementById('css-theme');
+
+        // Function to set active theme
+        function setActiveTheme(themeName) {
+            // Update stylesheet href
+            themeStylesheet.href = `styles/${themeName}.css`;
+
+            // Update active button state
+            themeButtons.forEach(button => {
+                if (button.dataset.theme === themeName) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+
+            // Save preference to localStorage
+            localStorage.setItem('preferredTheme', themeName);
+        }
+
+        // Add click event to all theme buttons
+        themeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const themeName = this.dataset.theme;
+                setActiveTheme(themeName);
+            });
+        });
+
+        // Check if there's a saved theme preference
+        const savedTheme = localStorage.getItem('preferredTheme');
+        if (savedTheme) {
+            setActiveTheme(savedTheme);
+        }
+    });
+</script>
+
+</body>
+</html>
+

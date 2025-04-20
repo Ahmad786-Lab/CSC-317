@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FDF1DC; /* Beige color from baseball */
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FE5A1D; /* Giants orange */
+    text-shadow: 3px 3px 0px black;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #FE5A1D;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 2px 2px 5px orange;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 3px solid #FE5A1D;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Image Styling */
+img {
+    border: 5px solid #FE5A1D;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
